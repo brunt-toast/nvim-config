@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
     -- catpuccin colorscheme https://github.com/catppuccin/nvim
     use { "catppuccin/nvim", as = "catppuccin" }
     vim.cmd("colorscheme catppuccin-frappe")
-    -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 
     -- lsp-zero https://github.com/VonHeikemen/lsp-zero.nvim
     use {

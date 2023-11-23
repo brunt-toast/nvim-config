@@ -8,4 +8,5 @@ vim.opt.smartindent = true
 
 vim.scrolloff = 8
 
-vim.cmd.set "nu rnu"
+vim.cmd.set "nu rnu" -- set current line to have nu and others to have rnu
+vim.cmd.set "autochdir" -- auto-set the working directory (primarily for git purposes) 
