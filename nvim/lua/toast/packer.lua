@@ -16,6 +16,18 @@ return require('packer').startup(function(use)
     vim.cmd("colorscheme catppuccin-frappe")
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 
+    -- neo-tree.nvim 
+    use {
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        requires = {
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons",
+            "MunifTanjim/nui.nvim",
+            "3rd/image.nvim",
+        }
+    }
+
     -- lsp-zero https://github.com/VonHeikemen/lsp-zero.nvim
     use {
         'VonHeikemen/lsp-zero.nvim',
