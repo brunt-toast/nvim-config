@@ -14,3 +14,4 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [catpuccin](https://github.com/catppuccin/nvim)
 - [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim)
 - [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim)
+- [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
