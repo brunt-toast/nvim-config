@@ -8,3 +8,7 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- paste over doesn't overwrite paste buffer
 vim.keymap.set("x", "<leader>p", "\"_dp")
+
+-- go to definition
+vim.keymap.set('', '<F12>', '<cmd>lua vim.lsp.buf.definition()<CR>', { })
+
