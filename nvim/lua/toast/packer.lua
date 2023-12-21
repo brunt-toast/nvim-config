@@ -4,6 +4,35 @@ return require('packer').startup(function(use)
     -- Packer can manage itself https://github.com/wbthomason/packer.nvim
     use 'wbthomason/packer.nvim'
 
+    -- dashboard-nvim https://github.com/nvimdev/dashboard-nvim
+    use {
+        'nvimdev/dashboard-nvim',
+        event = 'VimEnter',
+        config = function()
+            require('dashboard').setup {
+                theme = 'hyper',
+                config = {
+                    header = {
+                        "",
+                        "",
+                        "",
+                        "",
+                        " ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗",
+                        " ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║",
+                        " ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║",
+                        " ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║",
+                        " ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║",
+                        " ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝",
+                        "",
+                        "",
+                        "",
+                    }
+                },
+            }
+        end,
+        requires = {'nvim-tree/nvim-web-devicons'}
+    }
+
     -- telescope https://github.com/nvim-telescope/telescope.nvim
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.4',

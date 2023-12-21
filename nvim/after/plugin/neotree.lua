@@ -1,1 +1,1 @@
-vim.api.nvim_command('Neotree')
+-- vim.api.nvim_command('Neotree')
